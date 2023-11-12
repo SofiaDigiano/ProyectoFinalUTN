@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="icon" href="./img/logo.png" >
+    <title>Trabajo Final</title>
+</head>
+<body class="body">
+    <nav>
+        <!-- LOGO -->
+        <a href='index.html'>
+            <svg  width="200" height="80">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
+            </svg>
+            </a>
+
+        <ul class="menu">
+
+        <!-- BOTONES SUPERIORES DERECHOS -->
+            <li class="item-menu"><a class='item-link' href='historia.html'>HISTORIA</a></li>
+            <li class="item-menu"><a class='item-link' href='jugar.html'>JUGUEMOS</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- BANNER CON IMAGEN Y TITULO -->
+    <header>
+        <div class="header">
+            <img src="./img/codigo.jpg" alt="Mi Imagen">
+            <h1 class="titulo-blanco" >PROGRAMACION E HISTORIA</h1>
+        </div> 
+     </header>
+
+
+    <!-- CONTENIDO PRINCIPAL CON DOS TARJETAS -->
+        <h2 class="contenido">CONTENIDO</h2>     
+    <main class="cont-padre">
+
+       <!-- TARJETAHISTORIA-->
+       <div class="card-container">
+           <div class="card" onclick="redirectToPage('historia.html')">
+               <img class="img-card" src="./img/img1.jpg" alt="imagenhistoria">
+               <p class="textcard">Conozcamos un poco sobre la historia de la programacion </p>
+               <div class="button-container">
+                <button class="button">Ir a Historia</button>
+            </div>
+        </div>
+     <!-- TARJETAJUEGO -->
+            <div class="card" onclick="redirectToPage('jugar.html')">
+                <img class="img-card" src="./img/img2.jpg" alt="imagenjuego">
+                <p class="textcard">Juguemos un poco sobre la computacion</p>
+                <div class="button-container">
+             <button class="button">Ir a Juego</button>
+                </div>
+       </div>
+    </div>
+   </main>
+   
+<!-- FOOTER-->
+   <footer>
+        <div class="footer-left">
+        <img class="logo" src="img/logo.png" alt="logo">
+            <h3 class="titulo-blanco titulo-foot">PROGRAMACION <br> E <br> HISTORIA </h3>
+        </div>
+           <div class="footer-right">Trabajo final - Por Digiano Sofia Ines</div>
+    </footer>
+  <!-- VINCULACION ARCHIVO JS -->
+    <script src="./main.js"></script>
+</body>
+</html>

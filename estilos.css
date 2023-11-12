@@ -1,0 +1,335 @@
+/* ESTILOS GENERALES */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181D31; 
+    
+}
+
+ /* HEADER*/
+ .header {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    overflow: hidden; /* Para que no se exceda en tamaño */
+    position: relative;
+}
+
+/* IMAGEN DE BANNER*/
+.header img {
+    width: 100%; /* Ajusta  ancho de la imagen  */
+    height: auto; /* Mantiene  proporción de aspecto de la imagen */
+}
+
+/* TITULO BANNER */
+.header h1 {
+    position: absolute;
+    top: 50%; /* Centra verticalmente el título */
+    left: 50%; /* Centra horizontalmente el título  */
+    transform: translate(-50%, -50%); /* Centra el título */
+    color: #EEEEEE; /*  color del texto */
+    text-shadow: 2px 2px 0px rgba(128, 128, 128, 1), 4px 5px 0px rgba(0, 0, 0, 1);
+    font-size: 50px; 
+}
+
+/* BARRA  SUPERIOR */
+nav {
+    background-color: #181D31; /* Color de fondo de la barra de navegación */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+/* BOTONES SUPERIORES DERECHOS*/
+.item-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 20px;
+    background-color: #E6DDC4;
+    text-align: center;
+    text-decoration: none;
+    color: #333; 
+    box-shadow: 2px 4px 0px #678983; /* sombra del botón */
+    border-radius: 10px;
+}
+
+.contenido {
+    color: #678983;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0)
+}
+
+
+/* SECCION PAGINA PRINCIPAL */
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    margin: 150px;
+}
+
+/* Tarjetas/botones*/
+.card-container {
+    max-width: 2000px; /* Ancho máximo del contenedor */
+    max-height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 400px;
+    justify-content: center;
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.card {
+    width: 350px;
+    height: 390px;
+    background-color: #E6DDC4;
+    border: 5px solid #678983;
+}
+
+/* Imagenes y texto de botones/tarjetas */
+.img-card {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+.textcard{
+    padding: 20px;
+    text-align:center;
+}
+/* Estilos para los botones "Ir a Historia" y "Ir a juego" */
+.button-container {
+    text-align: center;
+}
+
+.button {
+    position: relative;
+    
+    padding: 10px 30px 10px;
+    background-color: #181D31; /* Color del botón similar al sitio de referencia */
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 3px 3px 0px rgba(103, 137, 131, 3);
+    
+}
+
+/* FOOTER*/
+footer {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #678983;
+    color: #181D31;    
+    padding: 50px;
+}
+
+.footer-left {
+   display:flex;
+   align-items: justify;
+   font-size: 10px;
+   padding-left: 10px;
+   
+}
+
+/* Logo del Footer */
+.logo {
+    width: 80px; /* ancho de la imagen del logo */
+    height: auto; /* proporción de aspecto de la imagen */
+    margin-right: 30px; /* Espacio entre el logo y el título */
+}
+
+
+.footer-right {
+    display:flex;
+    align-items: center;
+}
+
+/*  "cont-padre" de los dos botones */
+.cont-padre {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* LOGO  */
+svg {
+    opacity: 0; /* Inicialmente oculta el logo */
+    animation: fadeIn 2.5s ease-out forwards; /* Animación de fade in */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* SECCION HISTORIA */
+
+.card-hist {
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .card-hist h2 {
+    color: #678983;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+    margin-left: 20px; 
+  }
+  
+  .card-hist p {
+    color: #E6DDC4;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20px;
+  }
+  
+  @media (min-width: 900px) {
+    .card-hist {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .card-hist h2,
+    .card-hist p {
+      width: 100%; /* Ajusta según tu preferencia */
+    }
+  }
+
+/* titulo del video  */
+.contenedorVideo h2 {
+    color: #678983;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0)
+}
+
+.contenedorVideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+
+}
+.barra{
+    background-color: #1d1d1d;
+
+    border-radius: 10px;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.botonera{
+    display: flex;
+    gap: 20px;
+}
+.container{
+    padding: 5px;
+    background-color: black;
+    width: 70%;
+}
+
+#play,#pause{
+  width: 100px;
+  background: #E6DDC4; /* Cambia el color de fondo */
+  border: 2px solid #000000; /* Añade el borde inferior */
+  box-shadow: 3px 3px 0px rgba(103, 137, 131, 3);
+  border-radius: 10px;
+  color: #000; /* Cambia el color del texto */
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.botonesVideo:active{
+    transform: translate(3px, 2px);
+}
+#showTime{
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+/* SECCION JUEGO */
+.titulojuego{
+    color: #678983;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0)
+}
+
+   
+   
+   /* ROMPECABEZAS*/
+   .juego{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   .cajas{
+       display: flex;
+       flex-direction: row;
+   }
+   .caja{
+       width: 275px;
+       height: 400px;
+       display: flex;
+       border: 2px solid black;
+       background-color: grey;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+   }
+   .caja:hover{
+       background-color: #1d1d1d;
+       
+   }
+   .caja:hover>p{
+       color: #E6DDC4;
+   }
+   #cajaimagenes{
+       display: flex;
+       flex-direction: row;
+       gap: 10px;
+       margin: 40px;
+   }
+   #imagen1,#imagen2,#imagen3{
+       width: 275px;
+       height: 400px;
+   }
+   .reinicio{
+       display: flex;
+       margin: auto;
+       padding: 10px 100px;
+       background: #E6DDC4; /* Cambia el color de fondo */
+       border: 2px solid #000000; /* Añade el borde inferior */
+       box-shadow: 3px 3px 0px rgba(103, 137, 131, 3);
+       border-radius: 10px;
+       color: #000; /* Cambia el color del texto */
+       font-size: 18px;
+       cursor: pointer;
+   }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="icon" href="./img/logo.png" >
+    <title>Trabajo Final</title>
+</head>
+<body class="body">
+    <nav>
+        <!-- LOGO -->
+        <a href='index.html'>
+            <svg  width="200" height="80">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
+            </svg>
+            </a>
+
+        <ul class="menu">
+
+        <!-- BOTONES SUPERIORES DERECHOS -->
+            <li class="item-menu"><a class='item-link' href='historia.html'>HISTORIA</a></li>
+            <li class="item-menu"><a class='item-link' href='jugar.html'>JUGUEMOS</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- BANNER IMAGEN Y TITULO -->
+    <header>
+        <div class="header">
+            <img src="./img/codigo.jpg" alt="Mi Imagen">
+            <h1 class="titulo-blanco" >JUGUEMOS UN POCO</h1>
+        </div> 
+     </header>
+
+<!-- CONTENIDO DEL ROMPECABEZAS -->
+     <main>
+        <h2 class="titulojuego">Armemos el rompecabezas y veamos qué imagen es...</h2>
+        <section class="juego">
+          <div class="cajas">
+            <div class="caja" id="cajasoltar" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <p>Arrastra y suelta la imagen aquí</p>
+            </div>
+            <div class="caja" id="cajasoltar2" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <p>Arrastra y suelta la imagen aquí</p>
+            </div>
+            <div class="caja" id="cajasoltar3" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <p>Arrastra y suelta la imagen aquí</p>
+            </div>
+          </div>
+          <div id="cajaimagenes">
+            <img id="imagen1" src="./img/rompe2.png" alt="imagen-rompecabezas" draggable="true" ondragstart="drag(event)" />
+            <img id="imagen2" src="./img/Rompe1.png" alt="imagen-rompecabezas" draggable="true" ondragstart="drag(event)" />
+            <img id="imagen3" src="./img/Rompe3.png" alt="imagen-rompecabezas" draggable="true" ondragstart="drag(event)" />
+          </div>
+        </section>
+        <button onclick="reinicio()" class="botonesRompe reinicio">Reiniciar</button>
+      </main>
+
+
+    <!-- FOOTER -->
+   <footer>
+    <div class="footer-left">
+    <img class="logo" src="img/logo.png" alt="logo">
+        <h3 class="titulo-blanco titulo-foot">PROGRAMACION <br> E <br> HISTORIA </h3>
+    </div>
+       <div class="footer-right">Trabajo final - Por Digiano Sofia Ines</div>
+</footer>
+<!-- LINK ARCHIVO JS -->
+<script src="./main.js"></script>
+</body>
+</html>
